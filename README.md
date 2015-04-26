@@ -4,116 +4,12 @@ Course project
 
 1.- Join the files of identical patern name
 
-2.- Add the name of variables
+2.- Add the name of variables from features.txt
 
-3.- Add the column activity (description)
+3.- Add the columns activity (description) and subject from y_train.txt and subject_train.txt
 
 4.- Read the columns with "mean or std" data
 
 5.- Create a new data set with average of each variable for each activity and each subject from 4
 
-This data set extract only de measurements on dthe mean and STD for each measurement required in point 2nd. of project requirements
-
- [1] "activity"                           "subject"                           
- [3] "BodyAccMeanX"                       "BodyAccMeanY"                      
- [5] "BodyAccMeanZ"                       "BodyAccStdX"                       
- [7] "BodyAccStdY"                        "BodyAccStdZ"                       
- [9] "GravityAccMeanX"                    "GravityAccMeanY"                   
-[11] "GravityAccMeanZ"                    "GravityAccStdX"                    
-[13] "GravityAccStdY"                     "GravityAccStdZ"                    
-[15] "BodyAccJerkMeanX"                   "BodyAccJerkMeanY"                  
-[17] "BodyAccJerkMeanZ"                   "BodyAccJerkStdX"                   
-[19] "BodyAccJerkStdY"                    "BodyAccJerkStdZ"                   
-[21] "BodyGyroMeanX"                      "BodyGyroMeanY"                     
-[23] "BodyGyroMeanZ"                      "BodyGyroStdX"                      
-[25] "BodyGyroStdY"                       "BodyGyroStdZ"                      
-[27] "BodyGyroJerkMeanX"                  "BodyGyroJerkMeanY"                 
-[29] "BodyGyroJerkMeanZ"                  "BodyGyroJerkStdX"                  
-[31] "BodyGyroJerkStdY"                   "BodyGyroJerkStdZ"                  
-[33] "BodyAccMagMean"                     "BodyAccMagStd"                     
-[35] "GravityAccMagMean"                  "GravityAccMagStd"                  
-[37] "BodyAccJerkMagMean"                 "BodyAccJerkMagStd"                 
-[39] "BodyGyroMagMean"                    "BodyGyroMagStd"                    
-[41] "BodyGyroJerkMagMean"                "BodyGyroJerkMagStd"                
-[43] "BodyAccMeanX.1"                     "BodyAccMeanY.1"                    
-[45] "BodyAccMeanZ.1"                     "BodyAccStdX.1"                     
-[47] "BodyAccStdY.1"                      "BodyAccStdZ.1"                     
-[49] "BodyAccMeanFreqX"                   "BodyAccMeanFreqY"                  
-[51] "BodyAccMeanFreqZ"                   "BodyAccJerkMeanX.1"                
-[53] "BodyAccJerkMeanY.1"                 "BodyAccJerkMeanZ.1"                
-[55] "BodyAccJerkStdX.1"                  "BodyAccJerkStdY.1"                 
-[57] "BodyAccJerkStdZ.1"                  "BodyAccJerkMeanFreqX"              
-[59] "BodyAccJerkMeanFreqY"               "BodyAccJerkMeanFreqZ"              
-[61] "BodyGyroMeanX.1"                    "BodyGyroMeanY.1"                   
-[63] "BodyGyroMeanZ.1"                    "BodyGyroStdX.1"                    
-[65] "BodyGyroStdY.1"                     "BodyGyroStdZ.1"                    
-[67] "BodyGyroMeanFreqX"                  "BodyGyroMeanFreqY"                 
-[69] "BodyGyroMeanFreqZ"                  "BodyAccMagMean.1"                  
-[71] "BodyAccMagStd.1"                    "BodyAccMagMeanFreq"                
-[73] "BodyBodyAccJerkMagMean"             "BodyBodyAccJerkMagStd"             
-[75] "BodyBodyAccJerkMagMeanFreq"         "BodyBodyGyroMagMean"               
-[77] "BodyBodyGyroMagStd"                 "BodyBodyGyroMagMeanFreq"           
-[79] "BodyBodyGyroJerkMagMean"            "BodyBodyGyroJerkMagStd"            
-[81] "BodyBodyGyroJerkMagMeanFreq"        "angletBodyAccMean.gravity"         
-[83] "angletBodyAccJerkMean.gravityMean"  "angletBodyGyroMean.gravityMean"    
-[85] "angletBodyGyroJerkMean.gravityMean" "angleX.gravityMean"                
-[87] "angleY.gravityMean"                 "angleZ.gravityMean"  
-
-Feature Selection 
-=================
-
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
-
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
-
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
-
-These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
-
-The set of variables that were estimated from these signals are: 
-
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
-
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
-
+This data set extract only de measurements on dthe MEAN and STD for each measurement required in point 2nd. of project requirements.
