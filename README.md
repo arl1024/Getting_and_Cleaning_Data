@@ -1,4 +1,5 @@
-# Getting_and_Cleaning_Data
+# README.md
+## Getting_and_Cleaning_Data
 Course project
 
 1.- Join the files of identical patern name
@@ -7,9 +8,9 @@ Course project
 
 3.- Add the column activity (description)
 
-4.- Read the columns without "mean or std" data
+4.- Read the columns with "mean or std" data
 
-5.- Create a new data set with average of each variable for each activity and each subject
+5.- Create a new data set with average of each variable for each activity and each subject from 4
 
 This data set extract only de measurements on dthe mean and STD for each measurement required in point 2nd. of project requirements
 
