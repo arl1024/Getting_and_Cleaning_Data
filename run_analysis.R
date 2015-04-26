@@ -6,7 +6,7 @@ library("data.table")
 ########################
 # Preparation directory
 ########################
-setwd("C:/CURSOS/COURSERA/Getting and Cleaning Data/EJERCICIO/")
+#setwd("C:/CURSOS/COURSERA/Getting and Cleaning Data/EJERCICIO/")
 
 # Read features names
 nomcamp<-read.table("features.txt",header=FALSE)
